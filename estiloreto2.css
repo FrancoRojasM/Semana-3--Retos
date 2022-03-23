@@ -39,13 +39,14 @@ button{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 10px 20px;
+    flex: wrap;
 }
 .caja{
     border: 1px solid red;
     text-align: center;
     border: 1px solid #d8d8d8;
     height: 500px;    
-    padding:0px 200px;
+    /* padding:0px 200px; */
     width: 32.5%;
     box-shadow: 5px 5px 10px #dddddd; 
 
@@ -58,9 +59,62 @@ button{
     font-size: 120px;
 }
 .bloque2 p{
-    margin-top: 40px;
+    margin: 40px 50px 0px 50px;
+    text-align: center;
+    
+   }
+
+/* breakpoints 480px*/
+
+@media screen and (max-width:468px) {
+    
+    .bloque1{
+        height: 450px;
+    }
+    .bloque1 h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .bloque1 p{
+        font-size: 16px;
+        margin-top: 60px;
+    
+    }
+    
+    .bloque2{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10px;
+    /* padding: 10px 20px 10px 20px; */
+
+    }
+   
+    
+    .caja{
+        margin-top: 10px;
+        padding:50%;
+
+    }
+
+    .caja h3{
+        margin-top: -120px;
+        margin-left: -50px;        
+    }
+    .caja i{
+        margin-left: -60px;
+    }
+
+    .bloque2 p{
+    width: 250px;
+    margin-left: -120px;
+    padding: 10px 0px 30px 0px;
     line-height: 30px;
+       }
+    
 }
+
+
 
 
 
